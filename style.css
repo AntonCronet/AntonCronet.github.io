@@ -1,9 +1,14 @@
-body {
+body.dark-mode {
   font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  background: #121212;
+  color: #f0f0f0;
   margin: 0;
   padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6600;
 }
 
 .project-grid {
@@ -13,12 +18,13 @@ body {
 }
 
 .project-card {
-  background: white;
-  border: 1px solid #ccc;
+  background: #1e1e1e;
+  border: 1px solid #333;
   border-radius: 16px;
   padding: 16px;
   text-align: center;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
 }
 
 .project-card img {
@@ -27,7 +33,14 @@ body {
 }
 
 .project-card a {
-  color: orange;
+  color: #ff6600;
   font-weight: bold;
   text-decoration: none;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid #ff6600;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.6);
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
 }
