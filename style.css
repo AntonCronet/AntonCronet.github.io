@@ -40,6 +40,10 @@ h1 {
   text-decoration: none;
 }
 
+.project-card p {
+  color: #999999; /* darker, subtle description text */
+}
+
 .project-card:hover {
   transform: translateY(-5px);
   border: 1px solid #ff6600;
