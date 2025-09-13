@@ -2,55 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
-  <h1>My Projects</h1>
-  <div class="project-grid">
-
-
-    <div class="project-card">
-      <!--  <img src="assets/trading_bot.png" alt="Copula Trading Bot Screenshot"> -->
-      <h2>Copula-Based Trading Bot</h2>
-      <p>Algorithmic trading strategy using copulas. Supports backtesting on historical data and paper trading via the Alpaca API. Designed to be modular and scalable, with a focus on META for paper trading.</p>
-      <a href="https://github.com/AntonCronet/Projects/tree/main/Trading%20Bot" target="_blank">View on GitHub</a>
+<body>
+  <nav>
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link active" onclick="showSection('about')">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="showSection('cv')">CV</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link" onclick="showSection('portfolio')">Portfolio</a>
+        </li>
+      </ul>
     </div>
- 
+  </nav>
 
-    <div class="project-card">
-      <!--  <img src="assets/bike_traffic.png" alt="Bike Traffic Prediction Screenshot"> -->
-      <h2>Bike Traffic Prediction using Weather Data</h2>
-      <p>Predict bike traffic using weather data. Implemented advanced ML models including Tree Models, Random Forest, Gradient Boosting, and Neural Networks. PCA and hyperparameter tuning were applied to optimize performance.</p>
-      <a href="https://github.com/AntonCronet/Projects/tree/main/Machine%20Learning" target="_blank">View on GitHub</a>
+  <!-- About Section -->
+  <section id="about" class="section active">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-content">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I'm a passionate developer and data scientist with expertise in machine learning, algorithmic trading, and statistical analysis. My work spans across various domains including quantitative finance, predictive modeling, and Bayesian statistics.</p>
+      <p>I have experience with advanced statistical methods, from MCMC sampling to confirmatory factor analysis, and I enjoy building practical solutions that bridge theory and real-world applications.</p>
+      <p>When I'm not coding, I'm exploring new methodologies in data science and staying up-to-date with the latest developments in financial markets and machine learning.</p>
     </div>
+  </section>
 
-
-    <div class="project-card">
-      <!-- <img src="assets/bayesian_methods.png" alt="Bayesian Methods Project Screenshot"> -->
-      <h2>Bayesian Methods: MCMC and Bootstrapping</h2>
-      <p>Bayesian inference of genotype frequencies using Hardy-Weinberg equilibrium with inbreeding adjustment. Includes MCMC sampling and bootstrapping for uncertainty estimation.</p>
-      <a href="https://github.com/AntonCronet/Projects/tree/main/Bayesian%20methods" target="_blank" >View on GitHub</a>
+  <!-- CV Section -->
+  <section id="cv" class="section">
+    <h1 class="section-title">Curriculum Vitae</h1>
+    <div class="cv-content">
+      <iframe 
+        src="assets/cv.pdf" 
+        width="100%" 
+        height="1200px" 
+        style="border: none; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+      </iframe>
+      <a 
+        href="assets/cv.pdf" 
+        class="cv-download" 
+        target="_blank" 
+        download>
+        Download CV (PDF)
+      </a>
     </div>
+  </section>
 
-    <div class="project-card">
-      <!-- <img src="assets/cfa.png" alt="CFA Project Screenshot"> -->
-      <h2>Confirmatory Factor Analysis</h2>
-      <p>Statistical modeling of job performance using R, EFA & CFA with latent constructs like Motivation, Intellect, and Social Ability.</p>
-      <a href="https://github.com/AntonCronet/Projects/tree/main/Exploratory%20and%20Confirmatory%20Factor%20Analysis" target="_blank" >View on GitHub</a>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <h1 class="section-title">My Projects</h1>
+    <div class="project-grid">
+      <div class="project-card">
+        <h2>Copula-Based Trading Bot</h2>
+        <p>Algorithmic trading strategy using copulas. Supports backtesting on historical data and paper trading via the Alpaca API. Designed to be modular and scalable, with a focus on META for paper trading.</p>
+        <a href="https://github.com/AntonCronet/Projects/tree/main/Trading%20Bot" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h2>Bike Traffic Prediction using Weather Data</h2>
+        <p>Predict bike traffic using weather data. Implemented advanced ML models including Tree Models, Random Forest, Gradient Boosting, and Neural Networks. PCA and hyperparameter tuning were applied to optimize performance.</p>
+        <a href="https://github.com/AntonCronet/Projects/tree/main/Machine%20Learning" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h2>Bayesian Methods: MCMC and Bootstrapping</h2>
+        <p>Bayesian inference of genotype frequencies using Hardy-Weinberg equilibrium with inbreeding adjustment. Includes MCMC sampling and bootstrapping for uncertainty estimation.</p>
+        <a href="https://github.com/AntonCronet/Projects/tree/main/Bayesian%20methods" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h2>Confirmatory Factor Analysis</h2>
+        <p>Statistical modeling of job performance using R, EFA & CFA with latent constructs like Motivation, Intellect, and Social Ability.</p>
+        <a href="https://github.com/AntonCronet/Projects/tree/main/Exploratory%20and%20Confirmatory%20Factor%20Analysis" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h2>Bachelor Thesis: SWESTR Forecasting</h2>
+        <p>Forecasting the SWESTR using ARIMA models and evaluating the impact of EURSTR as an exogenous variable.</p>
+        <a href="https://github.com/AntonCronet/Projects/tree/main/Bachelor%20Thesis" target="_blank">View on GitHub</a>
+      </div>
     </div>
+  </section>
 
-
-
-    <div class="project-card">
-      <!-- <img src="assets/bachelor_thesis.png" alt="Bachelor Thesis Screenshot"> -->
-      <h2>Bachelor Thesis: SWESTR Forecasting</h2>
-      <p>Forecasting the SWESTR using ARIMA models and evaluating the impact of EURSTR as an exogenous variable.</p>
-      <a href="https://github.com/AntonCronet/Projects/tree/main/Bachelor%20Thesis" target="_blank">View on GitHub</a>
-    </div>
-
-
-
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
